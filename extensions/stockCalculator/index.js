@@ -13,8 +13,8 @@ roaButton.addEventListener('click', (event) => {
 
 peButton.addEventListener('click', (event) => {
     event.preventDefault();
-    const price = parseInt(document.getElementById('price'));
-    const earnings = parseInt(document.getElementById('earnings'));
+    const price = Number(document.getElementById('price').value);
+    const earnings = Number(document.getElementById('earnings').value);
     const res = document.getElementById("pe-result");
     //calculate p/e and display result
     console.log("Price/Earnings = " + price + " " + earnings);
@@ -23,15 +23,16 @@ peButton.addEventListener('click', (event) => {
         res.textContent = "Cannot divide by zero";
         return;
     }
-    let total = price/res;
+    let total = Number(price/earnings);
+    console.log(`Total: ` + total);
     res.textContent = "P/E = " + total;
     console.log("pe calculated");
 })
 
 stockButton.addEventListener('click', (event) => {
     event.preventDefault();
-    const stockName = documnet.getElementById('stock-name');
+    const stockName = document.getElementById('stock-name');
     const stockSymbol = document.getElementById('stock-symbol');
     //add to local storage.
-    console.log("Stock added!" + stockName.value + " " + stockSymbol.value);
+    console.log("Stock added: " + stockName.value + " " + stockSymbol.value);
 })
