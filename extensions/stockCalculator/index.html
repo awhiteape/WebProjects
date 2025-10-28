@@ -15,13 +15,13 @@
         <section>
             <div class="roa">
                 <h2>RoA Calculation</h2>
-                <form action="" class="inputs">
+                <form class="inputs" id="roa-form">
                     <label for="net-income">Net Income</label>
                     <input type="number" id="net-income" name="netIncome"/>
                     <label for="total-assets">Total Assets</label>
                     <input type="number" id="total-assets" name="total-assets"/>
                     <p id="roa-result">Result: </p>
-                    <button type="submit" aria-label="Calculate RoA">Calculate</button>
+                    <button id="roa-submit" type="submit" aria-label="Calculate RoA">Calculate RoA</button>
                 </form>
             </div>
         </section>
@@ -49,5 +49,6 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
