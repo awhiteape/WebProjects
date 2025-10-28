@@ -1,0 +1,18 @@
+root {
+    --beige: #ddd8c4;
+    --light-green: #a3c9a8;
+    --mid-green: #84b59f;
+    --mid-blue-green: #69a297;
+    --blue-base: #50808e;
+}
+
+body {
+    background-color: #ddd8c4;
+}
+
+button {
+    background-color: #84b59f;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
