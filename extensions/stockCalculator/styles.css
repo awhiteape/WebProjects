@@ -8,6 +8,18 @@ root {
 
 body {
     background-color: #ddd8c4;
+    margin: 0;
+}
+
+nav {
+    font-weight: bold;
+    background-color: #84b59f;
+    padding: 1rem;
+}
+
+nav a {
+    padding: 0 1rem;
+    font-style: italic;
 }
 
 button {
@@ -15,4 +27,26 @@ button {
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
+    width: 8rem;
+    margin: 1rem 0;
+}
+
+div {
+    padding: 0 1rem;
+}
+
+label {
+    color: #50808e;
+    font-weight: bold;
+    margin: .25rem;
+}
+
+input {
+    width: 15rem;
+    margin: .25rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
 }
