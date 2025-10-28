@@ -13,7 +13,16 @@ roaButton.addEventListener('click', (event) => {
 
 peButton.addEventListener('click', (event) => {
     event.preventDefault();
+    const price = parseInt(document.getElementById('price'));
+    const earnings = parseInt(document.getElementById('earnings'));
+    const res = document.getElementById("pe-result");
     //calculate p/e and display result
+    if (earnings === 0) {
+        console.log("Cannot divide by zero");
+        return;
+    }
+    let total = price/res;
+    res.textContent = "P/E = " + total;
     console.log("pe calculated");
 })
 
