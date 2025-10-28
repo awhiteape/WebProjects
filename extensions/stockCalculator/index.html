@@ -9,28 +9,39 @@
 <body>
     <main>
         <nav>
-
+            <a>Home</a>
+            <a>Stocks</a>
         </nav>
         <section>
             <div class="roa">
                 <h2>RoA Calculation</h2>
                 <form>
                     <label for="net-income">Net Income</label>
+                    <input type="number" id="net-income" name="netIncome"/>
                     <label for="total-assets">Total Assets</label>
-                    <label for="roa-result">Result: </label>
+                    <input type="number" id="total-assets" name="total-assets"/>
+                    <p id="roa-result">Result: </p>
                     <button type="submit" aria-label="Calculate RoA">Calculate</button>
                 </form>
             </div>
         </section>
         <section>
-            <div class="p-e"></div>
+            <div class="p-e">
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price"/>
+                <label for="earnings">Earnings</label>
+                <input type="number" id="earnings" name="earnings"/>
+                <p id="pe-result">Result: </p>
+            </div>
             <button type="submit" aria-label="Calculate P over E">Calculate</button>
         </section>
         <section>
             <div class="add-stock">
                 <form>
                     <label for="stock-name">Stock Name</label>
-                    <label for="stock-Symbol">Stock Symbol</label>
+                    <input type="text" id="stock-name" name="stock-name" placeholder="Company"/>
+                    <label for="stock-symbol">Stock Symbol</label>
+                    <input type="text" id="stock-symbol" name="stock-symbol" placeholder="IQ">
                     <button type="submit">Save</button>
                 </form>
             </div>
