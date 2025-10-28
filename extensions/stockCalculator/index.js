@@ -13,10 +13,12 @@ roaButton.addEventListener('click', (event) => {
 
 peButton.addEventListener('click', (event) => {
     event.preventDefault();
+    //calculate p/e and display result
     console.log("pe calculated");
 })
 
 stockButton.addEventListener('click', (event) => {
     event.preventDefault();
+    //add to local storage.
     console.log("Stock added!");
 })

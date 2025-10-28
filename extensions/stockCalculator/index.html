@@ -15,7 +15,7 @@
         <section>
             <div class="roa">
                 <h2>RoA Calculation</h2>
-                <form class="inputs" id="roa-form">
+                <form id="roa-form" class="inputs">
                     <label for="net-income">Net Income</label>
                     <input type="number" id="net-income" name="netIncome"/>
                     <label for="total-assets">Total Assets</label>
@@ -33,7 +33,7 @@
                     <label for="earnings">Earnings</label>
                     <input type="number" id="earnings" name="earnings"/>
                     <p id="pe-result">Result: </p>
-                    <button type="submit" aria-label="Calculate P over E">Calculate</button>
+                    <button id="pe-submit" type="submit" aria-label="Calculate P over E">Calculate</button>
                 </form>
             </div>
         </section>
@@ -44,7 +44,7 @@
                     <input type="text" id="stock-name" name="stock-name" placeholder="Company"/>
                     <label for="stock-symbol">Stock Symbol</label>
                     <input type="text" id="stock-symbol" name="stock-symbol" placeholder="IQ">
-                    <button type="submit">Save</button>
+                    <button id="save-stock" type="submit">Save</button>
                 </form>
             </div>
         </section>
